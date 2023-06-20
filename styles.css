@@ -1,0 +1,178 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    height: 20vh;
+    margin: 0;
+}
+
+
+.HeadStyle{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+
+}
+.HeadStyle>h4{
+    text-align: center;
+    grid-column: span 8;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1px;
+    color: white;
+}
+
+.HeadStyle>button{
+    height: 10vh;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.hb1{
+    background:#3AA6B9;
+}
+.hb2{
+    background:#0A6EBD;
+}
+.hb3{
+    background:#F86F03;
+}
+.hb4{
+    background:#E966A0;
+}
+.hb5{
+    background:#F2BE22;
+}
+.hb6{
+    background:#9336B4;
+}
+.hb7{
+    background:#F6FA70;
+}
+.hb8{
+    background:black;
+}
+
+.BodyStyle{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 5px;
+    margin: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+
+}
+
+.BodyStyle>h4{
+    text-align: center;
+    grid-column: span 8;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1px;
+    color: white;
+
+}
+
+.BodyStyle>button{
+    height: 10vh;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0;
+        box-shadow: 2px 2px 10px;
+
+}
+.bb1{
+    background:#C1ECE4;
+}
+.bb2{
+    background:#A2CDB0;
+}
+.bb3{
+    background:#FFD0D0;
+}
+.bb4{
+    background:#A0C49D;
+}
+.bb5{
+    background:#E8A9A9;
+}
+.bb6{
+    background:#E4A5FF;
+}
+.bb7{
+    background:#00DFA2;
+}
+.bb8{
+    background:black;
+}
+.body1{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+}
+
+
+
+.ResetButton{
+    position: fixed;
+    bottom: 0px;
+    margin: 30px;
+    left: 40vw;
+}
+.ResetButton>button{
+    width: 20vw;
+    height: 4vh;
+    background: #FF0060;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+
+  @media(max-width:700px){
+    .HeadStyle{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .HeadStyle>h4{
+        text-align: center;
+        grid-column: span 4;
+    }
+    .BodyStyle{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .BodyStyle>h4{
+        text-align: center;
+        grid-column: span 4;
+    }
+  }
